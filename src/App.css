@@ -2,8 +2,12 @@
     height:100%;
     width:100%;
     float:left;
-    background-color:rgb(255, 254, 250);
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.8) 60%, rgba(175, 172, 172, 0.9) 100%);
     box-sizing: border-box;
+    padding:5%;
+    padding-left:10%;
+    padding-right:14%;
+    
 }
 
 .bg-layer {
@@ -20,14 +24,13 @@
 @media (min-width: 576px) { 
     .container {
         padding-right: 7%;
-        padding-left: 7%;
+        padding-left: 8%;
     }
 }
 
 
 @media (min-width: 768px) {
-    .container {
-        padding-right: 7%;
+    .container {padding-right: 7%;
         padding-left: 7%;
     }
 }
@@ -44,6 +47,6 @@
 @media (min-width: 1200px) { 
     .container {
         padding-right: 7%;
-        padding-left: 7%;
+        padding-left: 5%;
     }
 }

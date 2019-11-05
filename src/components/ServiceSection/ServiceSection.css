@@ -35,28 +35,32 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        clear: both;
     }
     
     .box {
-        display: inline-block;
         margin-top: 0px;
         width:180px;
-        height:500px;
         margin: 0;
         box-sizing: border-box;
-        -webkit-transform: skewX(-25deg);
-        -moz-transform: skewX(-25deg);
-        -ms-transform: skewX(-25deg);
-        -o-transform:skewX(-25deg);
-        transform: skewX(-20deg);
-        float:none;
+        -webkit-transform: skewX(-15deg);
+        -moz-transform: skewX(-15deg);
+        -ms-transform: skewX(-15deg);
+        -o-transform:skewX(-15deg);
+        transform: skewY(-15deg);
+        float:left;
+        position:relative;
     }
       
-    .box > .wrapper {
-        -webkit-transform: skewY(5deg);
-        -moz-transform: skewY(5deg);
-        -ms-transform: skewY(5deg);
-        -o-transform: skewY(5deg);
-        transform: skewY(5deg);
+    .wrapper {
+        -webkit-transform: skewY(20deg);
+        -moz-transform: skewY(20deg);
+        -ms-transform: skewY(20deg);
+        -o-transform: skewY(20deg);
+        transform: skewX(15deg);
+        height:100%;
+
+  
+        margin:0 -30%;
     }
 }

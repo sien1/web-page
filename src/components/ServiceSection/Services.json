@@ -1,0 +1,25 @@
+[
+    {
+        "borderBottomRightRadius":"0px",
+        "borderTopLeftRadius":"25px"
+    },
+    {
+        "borderBottomRightRadius":"0px",
+        "borderTopLeftRadius":"0px",
+        "bottom":3
+    },
+    {
+        "borderBottomRightRadius":"0px",
+        "borderTopLeftRadius":"0px"
+    },
+    {
+        "borderBottomRightRadius":"0px",
+        "borderTopLeftRadius":"0px",
+        "bottom":3
+    },
+    {
+        "borderBottomRightRadius":"25px",
+        "borderTopLeftRadius":"0px"
+    }
+
+]
