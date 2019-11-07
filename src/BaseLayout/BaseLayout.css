@@ -1,0 +1,26 @@
+.base-layout {
+    height:100%;
+    width:100%;
+    float:left;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.8) 60%, rgba(175, 172, 172, 0.9) 100%);
+}
+
+.base-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 2fr 3fr 2fr;
+    grid-gap:15px;
+    
+    height: 100%;
+    width: 100%;
+    
+}
+
+.base-grid .a {
+    grid-column: 2;
+    grid-row: 2;
+    position:relative;
+    
+    box-sizing: border-box;
+    
+}

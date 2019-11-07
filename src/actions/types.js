@@ -1,0 +1,1 @@
+export const TRIGGER_START = "TRIGGER_START";

@@ -1,19 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { ServiceSection } from './components';
-
+import { ServiceSection, ServiceSectionMobile, BaseLayout } from './components';
 
 function App() {
   return (
-    <div className="base-layout">
-        
-        <div className="container">
-            
-                <ServiceSection></ServiceSection>
-            
-        </div>
-    </div>
+    <BaseLayout>
+      
+    </BaseLayout>
   );
 }
 

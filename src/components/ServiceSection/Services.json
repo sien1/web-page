@@ -1,25 +1,18 @@
 [
     {
-        "borderBottomRightRadius":"0px",
-        "borderTopLeftRadius":"25px"
+        "classes":"service-round-left"
     },
     {
-        "borderBottomRightRadius":"0px",
-        "borderTopLeftRadius":"0px",
-        "bottom":3
+        "classes":"service-bottom"
     },
     {
-        "borderBottomRightRadius":"0px",
-        "borderTopLeftRadius":"0px"
+        "classes":""
     },
     {
-        "borderBottomRightRadius":"0px",
-        "borderTopLeftRadius":"0px",
-        "bottom":3
+        "classes":"service-bottom"
     },
     {
-        "borderBottomRightRadius":"25px",
-        "borderTopLeftRadius":"0px"
+        "classes":"service-round-right"
     }
 
 ]

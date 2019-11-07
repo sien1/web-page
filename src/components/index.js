@@ -1,3 +1,5 @@
+import BaseLayout from '../BaseLayout/BaseLayout';
 import ServiceSection from './ServiceSection/ServiceSection';
+import ServiceSectionMobile from './ServiceSectionMobile/ServiceSectionMobile';
 
-export { ServiceSection };
+export { ServiceSection, ServiceSectionMobile, BaseLayout };
