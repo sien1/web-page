@@ -2,6 +2,8 @@ import React from 'react';
 import './ServiceSection2.css';
 import ServicesList from './Services.json';
 
+
+
 let delay = (tag) => {
     return new Promise((resolve) => {
         setTimeout(()=>{
@@ -14,11 +16,11 @@ const ServiceSection = () => {
     return (
         <section className="ss-container">
             {   
-                ServicesList.map( x => ( 
-                    <div className={"service-container service-cuntainer " + x.classes}>
+                ServicesList.map( (x, index) => (
+                    <div className={"service-container service-cuntainer " + x.classes} key={index}>
                         <div className={"wrapper wrupper " + x.classes}>
-                            <div className={"inner onher " + x.classes} >
-
+                            <div className={"inner onher " + x.classes}>
+                                
                             </div>
                         </div>
                     </div>

@@ -1,16 +1,32 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import './BaseLayout.css';
 import { ServiceSection, ServiceSectionMobile } from '../components';
+import { TweenMax, Power3 } from 'gsap';
+
+
 
 
 const BaseLayout =  (props) => {
+    let logoItem = useRef(null);
+
+    useEffect(()=>{
+        
+        TweenMax.to(
+            logoItem,
+            3,
+            {
+                backgroundColor:'rgba(0,0,0,.1)',
+                y:0,
+                ease:Power3.easeInOut
+            }
+        )
+    },[]);
+
     return (
-        <div className="base-layout">
+        <div className="base-layout" ref={el => {logoItem = el}}>
             <div className="base-grid">
                 <div className="a">
-                    {
-                        window.innerWidth < 600 ? <ServiceSectionMobile/> : <ServiceSection/>
-                    }
+                    <ServiceSection />
                 </div>
             </div>
         </div>

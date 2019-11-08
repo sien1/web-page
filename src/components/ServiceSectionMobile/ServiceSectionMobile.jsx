@@ -1,20 +1,31 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Slider from 'react-slick';
 import './ServiceSectionMobile.css';
 
 
-const ServiceSectionMobile = () => {
-    return (
-        <div className="ssm-container">
-            <div className="ssm-service-container">
-                <div class-Name="ssm-card">
-                    
-                </div>
-                <div className="ssm-card">
-                    
-                </div>
+
+class ServiceSectionMobile extends Component {
+    render(){
+        var settings = {};
+        return (
+        <div style={{padding:'40px', background:'red'}}>
+            <Slider {...settings}>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvn5bx6R1ZAVXxMsYdyykUaG8ntmSsqWohxCWYb_UPx_zy2Q2J" />
             </div>
-        </div>
-    );
-};
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvn5bx6R1ZAVXxMsYdyykUaG8ntmSsqWohxCWYb_UPx_zy2Q2J" />
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvn5bx6R1ZAVXxMsYdyykUaG8ntmSsqWohxCWYb_UPx_zy2Q2J" />
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvn5bx6R1ZAVXxMsYdyykUaG8ntmSsqWohxCWYb_UPx_zy2Q2J" />
+            </div>
+            </Slider>
+        </div>)
+    }
+}
 
 export default ServiceSectionMobile;
+
