@@ -62,16 +62,5 @@
         margin:0 -30%;
     }
 
-    @keyframes service-animation {
-        0% {
-            top: 0px; left: 0px; background: red;
-        }
-        50% {
-            top: 0px; left: 0px; background: rgb(102, 6, 6);
-        }
-        100% {
-            top: 0px; left: 0px; background: rgb(120, 110, 214);
-        }
-
-    }
+    
 }
