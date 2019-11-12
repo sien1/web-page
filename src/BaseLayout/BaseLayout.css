@@ -2,9 +2,8 @@
     height:100%;
     width:100%;
     float:left;
-    /* background:linear-gradient(180deg, rgba(255, 255, 255, 0.8) 60%, rgba(175, 172, 172, 0.9) 100%); */
-    background-color:gray;
-    
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.8) 60%, rgba(175, 172, 172, 0.9) 100%); 
+    overflow:hidden;
 }
 
 .base-grid {
@@ -22,7 +21,5 @@
     grid-column: 2;
     grid-row: 2;
     position:relative;
-    
     box-sizing: border-box;
-    
 }
