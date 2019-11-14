@@ -21,26 +21,26 @@ class ServiceSection extends Component {
         this.tl2 = new TimelineLite({ paused: false });
 
         this.tl3 = new TimelineLite({ paused: false });
-        
+
 	}
 
 	componentDidMount(){
         this.tl
         .staggerTo( this.containers , .6, { autoAlpha: 1, y: 0, skewY:'0deg'}, .05)
         .staggerTo( this.containers , .5, { autoAlpha: 1, y: 0,  skewY:'700deg', transitionTimingFunction: 'cubic-bezier(.5,.25, 1.0, 0.1)'}, .05)
-        .staggerTo( this.containers , .2, { skewX:'0deg', paddingRight:'5px'}, .05);
+        .staggerTo( this.containers , .2, { skewX:'0deg', paddingRight:'5px', }, .05);
 
         this.tl2
-        .staggerTo( this.wrappers, 2, {boxShadow: '-0px 3px 4px rgba(0,0,0,.5)', background:'red'});
+        .staggerTo( this.wrappers, 2, {boxShadow: '-0px 3px 4px rgba(0,0,0,.5)', });
 
         this.tl3
-        .staggerTo( [this.inners], 1, {boxShadow: 'inset 5px 5px 4px rgba(255,255,255, .4)'} , 2);
+        .staggerTo( [this.inners], 1, {boxShadow: 'inset 5px 5px 10px rgba(255,255,255, 1)', backgroundColor:'red'} , 2);
 	}
 
 	render(){
         return (
             <section className="ss-container" >
-                {            
+                {
                     ServicesList.map( (x, index) => (
                         <div  ref={div => this.containers[index] = div } className={"service-container service-cuntainer " } key={index}>
                             <div ref={div => this.wrappers[index] = div }  className="wrapper wrupper ">
