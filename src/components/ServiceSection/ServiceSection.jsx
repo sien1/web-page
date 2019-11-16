@@ -31,7 +31,7 @@ class ServiceSection extends Component {
         .staggerTo( this.containers , .2, { skewX:'0deg', paddingRight:'5px', }, .05);
 
         this.tl2
-        .staggerTo( this.wrappers, 2, {boxShadow: '-0px 3px 4px rgba(0,0,0,.5)', });
+        .staggerTo( this.wrappers, 2, {boxShadow: '- 0px 3px 4px rgba(0,0,0,.5)', });
 
         this.tl3
         .staggerTo( [this.inners], 1, {boxShadow: 'inset 5px 5px 10px rgba(255,255,255, 1)', backgroundColor:'red'} , 2);

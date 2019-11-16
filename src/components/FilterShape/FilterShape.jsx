@@ -1,47 +1,35 @@
 import React, { Component } from 'react';
 import './FilterShape.css';
+import { whileStatement } from '@babel/types';
 
 class FilterShape extends Component {
     constructor(props){
         super(props);
-        this.screenWidth= '';
     }
 
     render(){
+        let hexArray = []
+        let getGrid = () => {
+
+        }
+
         return (
-            <div>ME fui a pasear</div>
+            <div style={{float: 'left', width: '100%', height:'100%', margin:'0 auto', float:'none'}}>
+                <div class="hexagon-container">
+                {
+                    [...Array(112).keys()].map((x, index)=>{
+                        return (
+                            <div class="hexagon color-bootstrap">
+                        
+                            </div>
+                        )
+                    })
+                }
+                </div>
+            </div>
+            
         )
     }
 }
 
 export default FilterShape;
-
-
-// const FilterShape = () => {
-//     return (
-
-
-
-
-
-//         <div style={{float: 'left', width: '600px'}}>
-//             <div class="hex-row">
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//             </div>
-//             <div class="hex-row even">
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//             </div>
-//             <div class="hex-row">
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//                 <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-//             </div>
-//         </div>
-//     );
-// }
-
