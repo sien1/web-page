@@ -12,6 +12,7 @@ import {
     useLocation
   } from "react-router-dom"
 
+
 class BaseLayout extends Component {
     constructor(props){
         super(props);
@@ -31,6 +32,7 @@ class BaseLayout extends Component {
                     </div>
                     <div className="body">
                     </div>
+
                     {/* <div className="a"> 
                         <Router>
                             <Switch>
