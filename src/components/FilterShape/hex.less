@@ -1,0 +1,22 @@
+body { padding: 1em 0; background: #000 }
+svg { max-width: 100%; height: auto; display: block; }
+
+.hex { 
+  opacity: 0;
+	transition-duration: 1000ms;
+	transition-property: opacity, transform;
+	transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.hex.in-view { opacity: 1; }
+
+.nth-offset(@index, @property: transition-delay, @start: 400ms, @offset: 50ms) when (@index > 0) {
+  &:nth-child(6n+@{index}) {
+    @{property}: @start+ (@offset * (@index - 1));
+  }
+  .nth-offset(@index - 1, @property, @start, @offset);
+}
+
+.hex {
+  .nth-offset(6, transition-delay, 350ms);
+}

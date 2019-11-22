@@ -33,8 +33,8 @@ class BaseLayout extends Component {
                     <div className="body">
                     </div>
 
-                    {/* <div className="a"> 
-                        <Router>
+                    <div className="a"> 
+                        {/* <Router>
                             <Switch>
                                 <Route path="/start">
                                     
@@ -43,8 +43,8 @@ class BaseLayout extends Component {
                                     
                                 </Route>
                             </Switch>
-                        </Router>
-                    </div> */}
+                        </Router> */}
+                    </div>
                     <Container/>
                 </div>
             </div>
