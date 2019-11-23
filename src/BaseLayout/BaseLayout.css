@@ -13,7 +13,6 @@
     display: grid;
     grid-template-rows: 1fr 6fr;
     box-sizing: border-box;
-    height: 100%;
     width: 100%;
     border-radius:2px;
     position:relative;
@@ -42,7 +41,7 @@
     grid-row: 2;
     position:relative;
     box-sizing:border-box;
-    border:solid 1px white;
+    /* border:solid 1px white; */
     border-top:none;
     border-bottom-left-radius:3px;
     border-bottom-right-radius:3px;
@@ -51,15 +50,15 @@
 .base-grid .header .a {
     grid-column: 1;
     grid-row: 2;
-    border-left:white solid 1px;
-    border-top:solid 1px white;  
+    /* border-left:white solid 1px; */
+    /* border-top:solid 1px white;   */
     border-top-left-radius:3px;
 }
 
 .base-grid .header .c {
     grid-column: 3;
     grid-row: 2;
-    border-right:white solid 1px;
-    border-top:solid 1px white;  
+    /* border-right:white solid 1px; */
+    /* border-top:solid 1px white;   */
     border-top-right-radius:3px;
 }
