@@ -2,7 +2,7 @@
     height:100%;
     width:100%;
     float:left;
-    background:linear-gradient(40deg, rgb(0, 0, 0) , rgb(4, 1, 39)); 
+    background:linear-gradient(0deg,  rgb(33, 19, 54) 1%, rgb(6, 51, 104) 99%); 
     overflow:hidden;
     padding:1%;
     box-sizing: border-box;
